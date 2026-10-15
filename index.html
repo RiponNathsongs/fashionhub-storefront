@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="FashionHub — modern fashion, simple shopping. Discover everyday essentials and elevated wardrobe staples.">
+  <title>FashionHub — Modern Fashion. Simple Shopping.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over ৳3,500 <span aria-hidden="true">✦</span> Thoughtful style, every day</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="FashionHub home"><span class="brand-mark">F</span><span>fashion<span class="brand-light">hub</span><small>MODERN WARDROBE</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shop" data-nav="all">Shop all</a><a href="#shop" data-nav="new">New arrivals</a><a href="#shop" data-nav="women">Women</a><a href="#shop" data-nav="men">Men</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-toggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle light and dark mode"><svg viewBox="0 0 24 24"><path d="M20.5 15.3A8.3 8.3 0 0 1 8.7 3.5 8.5 8.5 0 1 0 20.5 15.3Z"/></svg></button>
+      <button class="icon-btn" id="account-open" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c.7-4 3.2-6 7.5-6s6.8 2 7.5 6"/></svg></button>
+      <button class="icon-btn bag-btn" id="cart-open" aria-label="Shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="count-badge" id="cart-count">0</span></button>
+      <button class="mobile-menu icon-btn" id="mobile-menu" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+  <div class="search-bar" id="search-bar"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="search-input" type="search" placeholder="Search shirts, trousers, accessories..." aria-label="Search products"><button id="search-close" class="text-button">Close</button></div>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE EVERYDAY EDIT · 2026</p>
+        <h1>Less, but<br><em>so much better.</em></h1>
+        <p class="hero-description">Considered pieces. Effortless combinations. A wardrobe that feels like you — made for wherever the day takes you.</p>
+        <div class="hero-buttons"><a class="btn btn-dark" href="#shop">Explore the collection <span>↗</span></a><a class="under-link" href="#story">Discover our approach <span>→</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>J</span><span>A</span><span>M</span><span>+</span></div><div><strong>Loved by 12k+ customers</strong><small>Everyday style, thoughtfully chosen</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1300&q=85" alt="Two friends wearing timeless everyday fashion">
+        <div class="hero-sticker"><span>THE</span><strong>NEW<br>NEUTRALS</strong><span>COLLECTION Nº 04</span></div>
+        <div class="hero-caption"><span>01 / 04</span><span>Easy layers, lasting style</span></div>
+      </div>
+      <div class="hero-side-note">GOOD CLOTHES. GOOD DAYS. — FH</div>
+    </section>
+    <section class="trust-strip" aria-label="Our promises"><div><span class="trust-icon">✳</span><span><strong>Considered quality</strong><small>Made to wear on repeat</small></span></div><div><span class="trust-icon">♧</span><span><strong>Easy returns</strong><small>30 days to decide</small></span></div><div><span class="trust-icon">↗</span><span><strong>Secure checkout</strong><small>Shop with confidence</small></span></div><div><span class="trust-icon">♡</span><span><strong>Style that lasts</strong><small>Less trend, more you</small></span></div></section>
+    <section class="categories section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FEEL</p><h2>Made for your <em>everyday.</em></h2></div><a class="under-link" href="#shop">View all categories <span>→</span></a></div>
+      <div class="category-grid">
+        <button class="category-card category-women" data-category="Women"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Women's fashion"><span class="category-overlay"><small>01 / SOFT STRUCTURE</small><strong>For her</strong><span>Explore women’s <b>↗</b></span></span></button>
+        <button class="category-card category-men" data-category="Men"><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=80" alt="Men's fashion"><span class="category-overlay"><small>02 / EVERYDAY CLASSICS</small><strong>For him</strong><span>Explore men’s <b>↗</b></span></span></button>
+        <button class="category-card category-accessories" data-category="Accessories"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Accessories"><span class="category-overlay"><small>03 / THE FINISHING TOUCH</small><strong>Details</strong><span>Explore accessories <b>↗</b></span></span></button>
+      </div>
+    </section>
+    <section class="products-section" id="shop">
+      <div class="section-wrap">
+        <div class="section-heading products-heading"><div><p class="eyebrow">CURATED FOR RIGHT NOW</p><h2>Good things, <em>on repeat.</em></h2><p class="muted">Your next favourite, waiting to be worn.</p></div><a class="under-link desktop-link" href="#shop" id="clear-filter">Shop everything <span>→</span></a></div>
+        <div class="shop-toolbar"><div class="filter-tabs" role="group" aria-label="Filter products"><button class="filter-tab active" data-filter="All">All pieces <span>08</span></button><button class="filter-tab" data-filter="Women">Women</button><button class="filter-tab" data-filter="Men">Men</button><button class="filter-tab" data-filter="Accessories">Accessories</button></div><label class="sort-label">Sort by <select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name A–Z</option></select></label></div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="no-results hidden" id="no-results"><span>⌕</span><h3>No pieces found</h3><p>Try another search or clear your filters.</p><button class="btn btn-dark" id="reset-filters">Clear filters</button></div>
+        <div class="center-action"><button class="btn btn-outline" id="show-all">Explore all pieces <span>↗</span></button></div>
+      </div>
+    </section>
+    <section class="editorial section-wrap" id="story"><div class="editorial-image"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85" alt="Calm, considered fashion boutique interior"><span class="image-note">A LITTLE LESS, A LOT MORE YOU.</span></div><div class="editorial-copy"><p class="eyebrow"><span class="eyebrow-line"></span> OUR PHILOSOPHY</p><h2>Buy less.<br><em>Wear it more.</em></h2><p>We believe getting dressed should feel simple. So we look for thoughtful details, comfortable fits and versatile pieces that earn their place in your wardrobe.</p><p>No noise. No endless trends. Just good design, made for real life.</p><a class="btn btn-dark" href="#shop">Find your forever pieces <span>↗</span></a><div class="editorial-signoff">The FashionHub team <span>♡</span></div></div></section>
+    <section class="newsletter"><div class="newsletter-inner"><p class="eyebrow">A NOTE FROM US</p><h2>Good style. <em>Good inbox.</em></h2><p>New arrivals, styling notes and a little something for your next order.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit">Count me in <span>→</span></button></form><small>By subscribing, you agree to receive FashionHub updates. Unsubscribe any time.</small></div><div class="newsletter-art">FH<span>✳</span></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">F</span><span>fashion<span class="brand-light">hub</span><small>MODERN WARDROBE</small></span></a><p>Everyday pieces. Better choices.<br>Style that feels like you.</p></div><div class="footer-col"><strong>Explore</strong><a href="#shop">Shop all</a><a href="#shop" data-footer-filter="Women">Women</a><a href="#shop" data-footer-filter="Men">Men</a><a href="#shop" data-footer-filter="Accessories">Accessories</a></div><div class="footer-col"><strong>Help & info</strong><a href="#" data-info="Shipping">Shipping & delivery</a><a href="#" data-info="Returns">Returns & exchanges</a><a href="#" data-info="FAQ">FAQs</a><a href="#" data-info="Contact">Contact us</a></div><div class="footer-col footer-social"><strong>Find us elsewhere</strong><a href="#newsletter-form">Instagram ↗</a><a href="#newsletter-form">Pinterest ↗</a><a href="#newsletter-form">TikTok ↗</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> FashionHub. Demo storefront.</span><span>Made for everyday living <b>♡</b></span><span>Privacy · Terms</span></div></footer>
+  <div class="scrim" id="scrim"></div>
+  <aside class="side-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">YOUR EDIT</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-btn drawer-close" aria-label="Close cart">×</button></div><div class="drawer-content" id="cart-items"></div><div class="drawer-footer" id="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">৳0</strong></div><small>Shipping and discounts calculated at checkout.</small><button class="btn btn-dark full-btn" id="checkout-btn">Continue to checkout <span>→</span></button><button class="under-link centered" id="continue-shopping">Keep looking <span>↗</span></button></div></aside>
+  <section class="modal" id="account-modal" role="dialog" aria-modal="true" aria-labelledby="account-title" aria-hidden="true"><button class="icon-btn modal-close" aria-label="Close account">×</button><div class="modal-brand">F.</div><p class="eyebrow">WELCOME TO YOUR SPACE</p><h2 id="account-title">Your account, <em>your way.</em></h2><p class="muted">Sign in to keep your favourites close and your orders in one place.</p><form id="account-form"><label for="account-email">Email address</label><input id="account-email" type="email" placeholder="you@example.com" required><label for="account-password">Password</label><input id="account-password" type="password" placeholder="At least 6 characters" minlength="6" required><button class="btn btn-dark full-btn" type="submit">Sign in / create demo account <span>→</span></button></form><button class="guest-btn" id="guest-continue">Continue as a guest</button><small class="demo-note">Demo only: account details are not sent to a server or saved after refresh.</small></section>
+  <section class="modal product-modal" id="product-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="product-modal-title"><button class="icon-btn modal-close" aria-label="Close product">×</button><div id="product-modal-content"></div></section>
+  <section class="modal info-modal" id="info-modal" role="dialog" aria-modal="true" aria-hidden="true"><button class="icon-btn modal-close" aria-label="Close information">×</button><p class="eyebrow">FASHIONHUB HELP</p><h2 id="info-title">Good to know.</h2><div id="info-content"></div><button class="btn btn-dark full-btn" id="info-close">Got it</button></section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
